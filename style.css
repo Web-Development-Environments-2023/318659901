@@ -1,7 +1,165 @@
-#menu
-{
+#menu {
+	background-color: #6e9497;
+	color: #fff;
+	display: flex;
 	position: fixed;
+	justify-content: space-between;
+	padding: 20px;
 	width: 100%;
-	height: 35px;
-	background: white;
+	align-items: center; 
 }
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+#menu li {
+	margin-right: 40px;
+	font-size: 19px;
+}
+
+#menu a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+#menu a:hover {
+	background-color: #7f9e9d;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: auto; 
+}
+
+.logo img {
+	height: 70px; 
+	margin-right: 10px; 
+}
+.logo h1{
+	color: #fff;
+	margin-right: 40px;
+	font-size: 23px;
+	font-style: italic;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 0;
+  }
+  
+  .section h2 {
+	font-size: 36px;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding-bottom: 10px;
+  }
+  
+  .section h2::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 2px;
+	background-color: #000;
+  }
+  .section p{
+	text-align: center;
+      direction: rtl;
+	  font-size: 18px;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+  }
+
+  #photos {
+	background-color: #ffffff;
+	padding: 20px;
+	display: grid; /* Use CSS grid to create the layout */
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Set the column width and make sure the images wrap to the next row if there's not enough space */
+	grid-gap: 20px; /* Add some space between the images */
+  }
+  
+  #photos figure {
+	margin: 0; /* Remove the margin from the figures */
+	border-radius: 5px;
+	box-shadow: 0 0 5px #4d5a55;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  #photos img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Make sure the images fill their containers */
+  }
+  
+  #photos figcaption {
+	background-color: rgba(0,0,0,0.8); /* Add a semi-transparent background to the captions */
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	position: absolute; /* Position the captions absolutely within their containers */
+	bottom: 0;
+	left: 0;
+	right: 0;
+  }
+  
+  #contact form {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+  }
+  
+  #contact label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  #contact input[type="text"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px #4d5a55;
+  }
+  
+  #contact select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px #4d5a55;
+  }
+  
+  #contact input[type="submit"] {
+	background-color: #4d5a55;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #contact input[type="submit"]:hover {
+	background-color: #3b4440;
+  }
+  
